@@ -1,0 +1,21 @@
+schema: '2.0'
+stages:
+  atomgpt:
+    cmd: bash scripts/run_atomgpt_data.sh
+    deps:
+    - path: scripts/data_preprocess.py
+      hash: md5
+      md5: 8191bccf181521a558b25bf401418eb5
+      size: 13081
+      isexec: true
+    - path: scripts/run_atomgpt_data.sh
+      hash: md5
+      md5: f8a20b7ecc3d2f856d56dffd452b624d
+      size: 286
+      isexec: true
+    outs:
+    - path: atomgpt_data
+      hash: md5
+      md5: 195fbca5d75917ab29bd61e56f090696.dir
+      size: 7732
+      nfiles: 26
